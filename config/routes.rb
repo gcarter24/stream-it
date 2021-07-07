@@ -14,4 +14,5 @@ Rails.application.routes.draw do
     get "/genres" => "genres#index"
     get "/genres/:id" => "genres#show"
   end
+  get "*path" => "application#index"
 end
