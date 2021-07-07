@@ -1,0 +1,6 @@
+@networks.map do |network|
+  {
+    id: network.id,
+    name: network.name,
+  }
+end

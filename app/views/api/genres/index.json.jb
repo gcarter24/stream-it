@@ -1,0 +1,12 @@
+final_genres = @genres.map do |genre|
+  {
+    id: genre.id,
+    name: genre.name,
+  }
+end
+media_types = Movie.all.map { |movie| movie.media_type }.uniq
+languages = Movie.all.map { |movie| movie.language }.uniq
+ratings = Movie.all.map { |movie| movie.rating }.uniq
+years = Movie.order(year: :desc).all.map { |movie| movie.year }.uniq
+lengths = Movie.order(runtime_minutes: :desc).all.map { |movie| movie.runtime_minutes }.uniq
+{ genres: final_genres, media_types: media_types, lengths: lengths, ratings: ratings, years: years, languages: languages }

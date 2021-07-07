@@ -1,0 +1,19 @@
+{
+  id: @final_movie.id,
+  title: @final_movie.title,
+  # watchmode_id: @final_movie.watchmode_id,
+  plot: @final_movie.plot,
+  year: @final_movie.year,
+  rating: @final_movie.rating,
+  # user_rating: @final_movie.user_rating
+  runtime_minutes: @final_movie.runtime_minutes,
+  media_type: @final_movie.media_type,
+  language: @final_movie.language,
+  genres: @final_movie.genres.map do |genre| {
+    #   id: genre.id,
+    name: genre.name,
+  }   end,
+  network: @final_movie.networks[0].name,
+  image: @final_movie.image,
+  streaming_url: @final_movie.streaming_url,
+}

@@ -1,0 +1,4 @@
+{
+  id: @network.id,
+  name: @network.name,
+}
