@@ -712,26 +712,22 @@
 # mg = MovieGenre.create(movie_id: 79, genre_id: 9)
 # mg = MovieGenre.create(movie_id: 79, genre_id: 13)
 # mg = MovieGenre.create(movie_id: 79, genre_id: 15)
-m = Movie.find(26)
-m.update(streaming_url: "https://www.showtimeanytime.com/#/movi
-  e/3448745")
-mn = MovieNetwork.where(movie_id: 26)
-mn.update(network_id: 7)
+# m = Movie.find(26)
+# m.update(streaming_url: "https://www.showtimeanytime.com/#/movie/3448745")
+# mn = MovieNetwork.where(movie_id: 26)
+# mn.update(network_id: 7)
 
-m = Movie.where(title: "RoboCop")
-m.update(streaming_url: "https://www.hulu.com/movie/robocop-a04
-  ab49b-f63c-447d-bd53-ed0d7b53c135")
-mn = MovieNetwork.where(movie_id: 46)
-mn.update(network_id: 5)
+# m = Movie.where(title: "RoboCop")
+# m.update(streaming_url: "https://www.hulu.com/movie/robocop-a04ab49b-f63c-447d-bd53-ed0d7b53c135")
+# mn = MovieNetwork.where(movie_id: 46)
+# mn.update(network_id: 5)
 
-m = Movie.where(title: "Taken")
-m.update(streaming_url: "https://www.hulu.com/watch/e5d5c843-ac
-  f7-4c52-9de6-4c822234163b")
-mn = MovieNetwork.where(movie_id: 5)
-mn.update(network_id: 5)
+# m = Movie.where(title: "Taken")
+# m.update(streaming_url: "https://www.hulu.com/watch/e5d5c843-acf7-4c52-9de6-4c822234163b")
+# mn = MovieNetwork.where(movie_id: 5)
+# mn.update(network_id: 5)
 
-m = Movie.where(title: "The Untouchables")
-m.update(streaming_url: "https://www.amazon.com/gp/video/detail/
-  B00BQP3Y3I/ref=atv_dl_rdr")
-mn = MovieNetwork.where(movie_id: 56)
-mn.update(network_id: 1)
+# m = Movie.where(title: "The Untouchables")
+# m.update(streaming_url: "https://www.amazon.com/gp/video/detail/B00BQP3Y3I/ref=atv_dl_rdr")
+# mn = MovieNetwork.where(movie_id: 56)
+# mn.update(network_id: 1)
