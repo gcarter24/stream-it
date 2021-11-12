@@ -1,6 +1,7 @@
 class Api::GenresController < ApplicationController
   def index
     @genres = Genre.all
+    @networks = Network.all
     render "index.json.jb"
   end
 

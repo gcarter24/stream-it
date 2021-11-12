@@ -1,0 +1,15 @@
+{
+  # id: @final_movie.id,
+  # title: @final_movie.title,
+  # plot: @final_movie.plot,
+  year: @final_movie[:years],
+  rating: @final_movie[:ratings],
+  # user_rating: @final_movie.user_rating
+  runtime_minutes: @final_movie[:lengths],
+  media_type: @final_movie[:media_types],
+  language: @final_movie[:languages],
+  genres: @final_movie[:genres],
+  network: @final_movie[:networks],
+# image: @final_movie.image,
+# streaming_url: @final_movie.streaming_url,
+}
